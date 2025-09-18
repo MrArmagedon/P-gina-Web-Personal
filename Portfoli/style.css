@@ -1,0 +1,292 @@
+/* Normalización de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 30px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 150px;
+}
+
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+header button span,
+header button::before,
+header button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+header button span {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+header button::before {
+    top: 0;
+}
+
+header button::after {
+    bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul a:hover {
+    background-color: #d4af37; /* Dorado */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Sección Home */
+#home {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #111;
+}
+
+#home p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+#home img {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 4px solid #d4af37; /* Borde dorado */
+}
+
+/* Sección Services */
+#services {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #111;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #111;
+}
+
+#services div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#services div h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+#services div p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#services a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #d4af37; /* Dorado */
+    color: #111;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+#services a:hover {
+    background-color: #b68d32; /* Dorado más oscuro */
+}
+
+/* Sección About */
+#about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    gap: 20px;
+    color: #111;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #111;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#about img {
+    width: 50%;
+    border-radius: 10px;
+    border: 4px solid #d4af37; /* Borde dorado */
+}
+
+/* Sección Work */
+#work {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #111;
+}
+
+#work h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#work p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#work div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#work img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid #d4af37; /* Borde dorado */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #d4af37; /* Dorado */
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #d4af37; /* Dorado */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header button {
+        margin-top: 10px;
+    }
+}
