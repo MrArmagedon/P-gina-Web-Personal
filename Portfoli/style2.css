@@ -15,10 +15,10 @@
     --clr-dark: #000;
     --clr-accent: #d4af37;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fs-h1: 4rem;
+    --fs-h2: 3rem;
+    --fs-h3: 2rem;
+    --fs-body: 1.5rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -27,10 +27,10 @@
 @media (max-width: 800px) {
     :root {
 
-        --fs-h1: 4rem;
-        --fs-h2: 3rem;
-        --fs-h3: 1.75rem;
-        --fs-body: 1.25rem;
+        --fs-h1: 5rem;
+        --fs-h2: 4rem;
+        --fs-h3: 2.5rem;
+        --fs-body: 1.75rem;
     }
 }
 
@@ -151,5 +151,81 @@ header nav {display: none;}
         position: relative;
         left: -3rem;
         width: calc(100% + 3rem);
+    }
+}
+
+.btn {
+
+    display: inline-block;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+
+    transform: scale(1.2);
+    background: var(--clr-light);
+}
+
+.my-services {
+
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+    background-image: url(./img/Fondo\ Formal\ dorat.jpg);
+    background-size: cover;
+    /*background-blend-mode: ;*/
+}
+
+.section-title-services {
+
+    color: var(--clr-accent);
+    position: relative;
+
+}
+
+.services {
+
+    margin-bottom: 4em;
+}
+
+.service {
+
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section-title-services::after {
+
+    content: "";
+    display: block;
+    width: 8em;
+    height: 2px;
+    margin: 1em auto 1em;
+    background: var(--clr-light);
+    opacity: 20%;
+}
+
+@media (min-width: 800px) {
+
+    .services {
+
+        display: flex;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service + .service {
+
+        /*margin-left: 2em;*/
     }
 }
