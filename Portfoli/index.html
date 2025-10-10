@@ -9,33 +9,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/39a5dcc351.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style2.css">
+    <script src="./script.js"></script>
 
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="./img/Logo Personal.png" alt="">
+        <div class="logo">
+            <img class="slide-in-elliptic-top-fwd" src="./img/Logo Personal.png" alt="">
         </div>
 
-        <button>
-            <span></span>
+        <button class="nav-toogle">
+            <span class="burguer"></span>
         </button>
 
         <nav class="nav">
             <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href=""></a>Home</li>
-                    <li class="nav-item"><a class="nav-link" href=""></a>My Services</li>
-                    <li class="nav-item"><a class="nav-link" href=""></a>About Me</li>
-                    <li class="nav-item"><a class="nav-link" href=""></a>Work</li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">My Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
             </ul>
         </nav>
     </header>
     <section class="intro" id="home">
         <h1 class="section-title section-title-intro">Hola, soc n'<b>Eric</b></h1>
         <p class="section-subtitle section-subtitle-intro">Programador de Videojocs</p>
-        <img class="intro-img" src="./img/Foto Catala.jpg" alt="">
+        <img class="intro-img bounce-in-top" src="./img/Foto Catala.jpg" alt="">
     </section>
 
     <section class="my-services" id="services">
@@ -67,7 +75,7 @@
     <section class="about" id="about">
 
         <h2 class="section-title section-title-about">Qui soc?</h2>
-        <p class="section-subtitle section-subtitle-about">La meva vida explicada de manera resumida</p>
+        <p class="section-subtitle section-subtitle-about">Explicació</p>
         <div>
             <p class="section-p section-p-about">Jo soc n'Eric Vinent Sintes</p>
             <p class="section-p section-p-about">L'esport és una de les coses més importants de la meva vida. Des de els tres anys entreno a futbol i
@@ -75,7 +83,7 @@
                 jugara futbol, també jugam a videojocs tots junts. Per parlar utlitzam l'aplicació anomenada Discord i
                 els jocs que més jugam són el Valorant, Rocket League, Fifa, Fortnite, etc.</p>
         </div>
-        <img class="about-img" src="./img/Foto Esport.jpg" alt="">
+        <img class="about-img roll-in-blurred-left" src="./img/Foto Esport.jpg" alt="">
 
     </section>
 
@@ -84,29 +92,30 @@
         <h2 class="section-title section-title-work">My Work</h2>
         <p class="section-subtitle section-subtitle-work">els meus treballs durant el curs</p>
         <div class="portfoli">
-            <a class="portfoli-item" href=""><img class="portfoli-img rotate-scale-up" src="./img/Calculadora.png" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img flip-2-hor-top-1" src="./img/Teclat amb audios.jpg" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img tilt-in-top-1" src="./img/Arcanoid.jpg" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img shadow-drop-2-center" src="./img/Tetris.jpg" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img slide-in-elliptic-top-fwd" src="./img/Joc Dinosaurio Google.jpg" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img bounce-in-top" src="./img/Laberinto.jpg" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img puff-in-center" src="./img/Pacman.jpg" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Calculadora.png" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Teclat amb audios.jpg" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Arcanoid.jpg" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Tetris.jpg" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Joc Dinosaurio Google.jpg" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Laberinto.jpg" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Pacman.jpg" alt=""></a>
             <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Joc Plataformes.jpg" alt=""></a>
-            <a class="portfoli-item" href=""><img class="portfoli-img roll-in-blurred-left" src="./img/Joc Mario Bros Eric.png" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Joc Mario Bros Eric.png" alt=""></a>
+            <a class="portfoli-item" href=""><img class="portfoli-img flicker-in-1" src="./img/Shooter.png" alt=""></a>
 
         </div>
 
     </section>
 
-    <footer>
+    <footer class="footer">
 
         <a href="mailto:evinent19876@iesjoanramis.org">evinent19876@iesjoanramis.org</a>
-        <ul>
+        <ul class="social-list">
 
-            <li><a href="https://github.com/MrArmagedon">GitHub</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/es/">Tiktok</a></li>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://github.com/MrArmagedon"><i class="fa-brands fa-github"></i></a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="social-list-item"><a class="social-list-link" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
     </footer>
 
